@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SLT-TikTakToe.iml" filepath="$PROJECT_DIR$/.idea/SLT-TikTakToe.iml" />
       <module fileurl="file://$PROJECT_DIR$/TicTac.iml" filepath="$PROJECT_DIR$/TicTac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TicTac.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TicTac.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TicTac.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TicTac.test.iml" />
     </modules>
   </component>
 </project>
