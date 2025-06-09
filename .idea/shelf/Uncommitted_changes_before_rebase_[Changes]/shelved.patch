@@ -1,0 +1,275 @@
+Index: test.java
+===================================================================
+diff --git a/test.java b/test.java
+deleted file mode 100644
+--- a/test.java	(revision bab6913c592aaf5f2f748eb817398db31b3f3e40)
++++ /dev/null	(revision bab6913c592aaf5f2f748eb817398db31b3f3e40)
+@@ -1,6 +0,0 @@
+-public class test {
+-    public static void main(String[] args) {
+-        System.out.printf("Emil Simeonov ");
+-        //TEST
+-    }
+-}
+Index: TicTacToe.iml
+===================================================================
+diff --git a/TicTacToe.iml b/TicTacToe.iml
+deleted file mode 100644
+--- a/TicTacToe.iml	(revision bab6913c592aaf5f2f748eb817398db31b3f3e40)
++++ /dev/null	(revision bab6913c592aaf5f2f748eb817398db31b3f3e40)
+@@ -1,13 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module external.linked.project.id=":src:main:TicTacToe" external.linked.project.path="$MODULE_DIR$/TicTac/src/main/TicTacToe" external.root.project.path="$MODULE_DIR$/TicTac" external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$/TicTac/src/main/TicTacToe">
+-      <excludeFolder url="file://$MODULE_DIR$/TicTac/src/main/TicTacToe/.gradle" />
+-      <excludeFolder url="file://$MODULE_DIR$/TicTac/src/main/TicTacToe/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/TicTac/src/main/TicTacToe/out" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: TicTac/src/main/TicTacToe/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TicTac/src/main/TicTacToe/build.gradle.kts b/TicTac/src/main/TicTacToe/build.gradle.kts
+new file mode 100644
+--- /dev/null	(date 1748699546400)
++++ b/TicTac/src/main/TicTacToe/build.gradle.kts	(date 1748699546400)
+@@ -0,0 +1,19 @@
++plugins {
++    id("java")
++}
++
++group = "org.example"
++version = "1.0-SNAPSHOT"
++
++repositories {
++    mavenCentral()
++}
++
++dependencies {
++    testImplementation(platform("org.junit:junit-bom:5.10.0"))
++    testImplementation("org.junit.jupiter:junit-jupiter")
++}
++
++tasks.test {
++    useJUnitPlatform()
++}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b9a9135e-e70e-484d-b55a-7c4a30e7ff05\" name=\"Changes\" comment=\"test upload2\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$/TicTac\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"TicTac\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"Pitchermeister\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/makkabaer/SLT-TikTakToe.git\",\r\n    \"accountId\": \"d635370d-f873-434c-96fe-300f61250cb8\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"customColor\": \"\",\r\n  \"associatedIndex\": 7\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2xraaGobVb4siHaFn8lJhH8tINY\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"development\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"settings.editor.selected.configurable\": \"vcs.Git\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b9a9135e-e70e-484d-b55a-7c4a30e7ff05\" name=\"Changes\" comment=\"\" />\r\n      <created>1748698708407</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1748698708407</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"test upload\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1748698821302</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1748698821302</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"test upload2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1748699009860</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1748699009860</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"test upload\" />\r\n    <MESSAGE value=\"test upload2\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"test upload2\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bab6913c592aaf5f2f748eb817398db31b3f3e40)
++++ b/.idea/workspace.xml	(date 1749496400262)
+@@ -4,7 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b9a9135e-e70e-484d-b55a-7c4a30e7ff05" name="Changes" comment="test upload2" />
++    <list default="true" id="e34c7046-3208-4ece-a094-8a69dfe7f597" name="Changes" comment="Rückgrat des Programs" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -41,24 +41,26 @@
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "Pitchermeister"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Pitchermeister&quot;
+   }
+-}]]></component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/makkabaer/SLT-TikTakToe.git",
+-    "accountId": "d635370d-f873-434c-96fe-300f61250cb8"
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/makkabaer/SLT-TikTakToe.git&quot;,
++    &quot;accountId&quot;: &quot;d635370d-f873-434c-96fe-300f61250cb8&quot;
+   }
+-}]]></component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "customColor": "",
+-  "associatedIndex": 7
+-}]]></component>
++}</component>
++  <component name="ProjectColorInfo">{
++  &quot;customColor&quot;: &quot;&quot;,
++  &quot;associatedIndex&quot;: 7
++}</component>
+   <component name="ProjectId" id="2xraaGobVb4siHaFn8lJhH8tINY" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -67,7 +69,6 @@
+   "keyToString": {
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "development",
+     "kotlin-language-version-configured": "true",
+     "settings.editor.selected.configurable": "vcs.Git"
+   }
+Index: TicTac/src/main/TicTacToe/src/main/java/org/example/Player.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TicTac/src/main/TicTacToe/src/main/java/org/example/Player.java b/TicTac/src/main/TicTacToe/src/main/java/org/example/Player.java
+new file mode 100644
+--- /dev/null	(date 1749490311327)
++++ b/TicTac/src/main/TicTacToe/src/main/java/org/example/Player.java	(date 1749490311327)
+@@ -0,0 +1,13 @@
++package org.example;
++
++public class Player {
++    private char marker;
++
++    public Player(char marker) {
++        this.marker=marker;
++    }
++
++    public char getMarker() {
++        return marker;
++    }
++}
+Index: TicTac/src/main/TicTacToe/src/main/java/org/example/Board.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TicTac/src/main/TicTacToe/src/main/java/org/example/Board.java b/TicTac/src/main/TicTacToe/src/main/java/org/example/Board.java
+new file mode 100644
+--- /dev/null	(date 1749491219550)
++++ b/TicTac/src/main/TicTacToe/src/main/java/org/example/Board.java	(date 1749491219550)
+@@ -0,0 +1,37 @@
++package org.example;
++
++public class Board {
++    private char[][] cells;
++
++    public Board() {
++        //leer
++    }
++
++    public boolean isCellEmpty (int x, int y) {
++        //user story nr.1
++        return true;
++    }
++
++    public void place (int x, int y, char marker) {
++        if (isCellEmpty(x,y)) {
++            cells[x][y]=marker;
++        }
++    }
++
++    public boolean isFull() {
++        //leer
++        return true;
++    }
++
++    public void clear() {
++        for (int i = 0; i < 3; i++) {
++            for (int j = 0; j < 3; j++) {
++                cells[i][j]=0;
++            }
++        }
++    }
++
++    public void print() {
++        //print befehl
++    }
++}
+Index: TicTac/src/main/TicTacToe/src/main/java/org/example/TicTacToe.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TicTac/src/main/TicTacToe/src/main/java/org/example/TicTacToe.java b/TicTac/src/main/TicTacToe/src/main/java/org/example/TicTacToe.java
+new file mode 100644
+--- /dev/null	(date 1749491219563)
++++ b/TicTac/src/main/TicTacToe/src/main/java/org/example/TicTacToe.java	(date 1749491219563)
+@@ -0,0 +1,26 @@
++package org.example;
++
++public class TicTacToe {
++    private Player player1;
++    private Player player2;
++    private Player currentPlayer;
++    private Board board;
++
++    public TicTacToe() {
++        //TicTacToe
++    }
++
++    public void start() {
++        //die App starten
++    }
++
++   /*public? protected? oder package protected? */ void switchCurrentPlayer() {
++       //X auf O, oder O auf X zu switchen
++   }
++
++   /*wieder dasselbe Problem*/ boolean hasWinner() {
++      // if (dreiInSelbenZeile/Spale/Diagonal)
++       return true;
++       //else return false;
++   }
++}
+Index: TicTac/.gradle/buildOutputCleanup/cache.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/TicTac/.gradle/buildOutputCleanup/cache.properties b/TicTac/.gradle/buildOutputCleanup/cache.properties
+new file mode 100644
+--- /dev/null	(date 1748698761200)
++++ b/TicTac/.gradle/buildOutputCleanup/cache.properties	(date 1748698761200)
+@@ -0,0 +1,2 @@
++#Sat May 31 15:39:21 CEST 2025
++gradle.version=8.10
+Index: TicTac/src/main/TicTacToe/src/main/java/org/example/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TicTac/src/main/TicTacToe/src/main/java/org/example/Main.java b/TicTac/src/main/TicTacToe/src/main/java/org/example/Main.java
+new file mode 100644
+--- /dev/null	(date 1748699546417)
++++ b/TicTac/src/main/TicTacToe/src/main/java/org/example/Main.java	(date 1748699546417)
+@@ -0,0 +1,7 @@
++package org.example;
++
++public class Main {
++    public static void main(String[] args) {
++        System.out.println("Hello, World!");
++    }
++}
+\ No newline at end of file
+diff --git a/TicTac/.gradle/8.10/dependencies-accessors/gc.properties b/TicTac/.gradle/8.10/dependencies-accessors/gc.properties
+new file mode 100644
+diff --git a/TicTac/.gradle/vcs-1/gc.properties b/TicTac/.gradle/vcs-1/gc.properties
+new file mode 100644
+diff --git a/TicTac/.gradle/8.10/gc.properties b/TicTac/.gradle/8.10/gc.properties
+new file mode 100644
