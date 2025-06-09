@@ -1,0 +1,36 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <bytecodeTargetLevel>\r\n      <module name=\"TicTac\" target=\"22\" />\r\n      <module name=\"TicTac.main\" target=\"22\" />\r\n      <module name=\"TicTac.test\" target=\"22\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 0420b41a0ac714f75ed51d2c7011cc22af9553f7)
++++ b/.idea/compiler.xml	(date 1749501677646)
+@@ -2,6 +2,8 @@
+ <project version="4">
+   <component name="CompilerConfiguration">
+     <bytecodeTargetLevel>
++      <module name="org.example.TicTac.main" target="22" />
++      <module name="org.example.TicTac.test" target="22" />
+       <module name="TicTac" target="22" />
+       <module name="TicTac.main" target="22" />
+       <module name="TicTac.test" target="22" />
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/TicTac\" />\r\n        <option name=\"gradleHome\" value=\"\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$/TicTac\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 0420b41a0ac714f75ed51d2c7011cc22af9553f7)
++++ b/.idea/gradle.xml	(date 1749501670297)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>

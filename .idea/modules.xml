@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/main/TicTacToe/TicTacToe_main.iml" filepath="$PROJECT_DIR$/.idea/modules/src/main/TicTacToe/TicTacToe_main.iml" group="TicTac/src/main/TicTacToe" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/main/TicTacToe/TicTacToe_test.iml" filepath="$PROJECT_DIR$/.idea/modules/src/main/TicTacToe/TicTacToe_test.iml" group="TicTac/src/main/TicTacToe" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/main/main.iml" filepath="$PROJECT_DIR$/.idea/modules/src/main/main.iml" group="TicTac/src/main" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.TicTac.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.TicTac.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.TicTac.test.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.TicTac.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/src.iml" filepath="$PROJECT_DIR$/.idea/modules/src/src.iml" group="TicTac/src" />
     </modules>
   </component>
