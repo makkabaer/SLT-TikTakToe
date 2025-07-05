@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/TicTac">
+      <sourceFolder url="file://$MODULE_DIR$/TicTac/src/main/java" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/TicTac/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/TicTac/build" />
     </content>
