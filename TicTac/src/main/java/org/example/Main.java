@@ -8,5 +8,8 @@ public class Main {
         board.print();
         board.place(1,0,'O');
         board.print();
+
+
     }
 }
+

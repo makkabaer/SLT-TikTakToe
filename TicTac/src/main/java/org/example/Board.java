@@ -12,16 +12,27 @@ public class Board {
         return true;
     }
 
+    public char[][] getCells() {
+        return cells;
+    }
+
+
     public void place (int x, int y, char marker) {
         if (isCellEmpty(x,y)) {
             cells[x][y]=marker;
         }
     }
 
-    public boolean isFull() {
-        //leer
-        return true;
-    }
+
+        public boolean isFull() {
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    if (cells[i][j] == ' ') return false;
+                }
+            }
+            return true;
+        }
+
 
     public void clear() {
         for (int i = 0; i < 3; i++) {
@@ -30,6 +41,26 @@ public class Board {
             }
         }
     }
+
+    public void makeMove(Player player) {
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        boolean validMove = false;
+
+        while (!validMove) {
+            System.out.print("Spieler " + player.getMarker() + ", gib deine Zeile (0-2) ein: ");
+            int row = scanner.nextInt();
+            System.out.print("Spieler " + player.getMarker() + ", gib deine Spalte (0-2) ein: ");
+            int col = scanner.nextInt();
+
+            if (row >= 0 && row < 3 && col >= 0 && col < 3 && isCellEmpty(row, col)) {
+                place(row, col, player.getMarker());
+                validMove = true;
+            } else {
+                System.out.println("Ungültiger Zug, bitte versuche es erneut.");
+            }
+        }
+    }
+
 
     public void print() {
         System.out.println("▁▁▁▁▁▁▁");

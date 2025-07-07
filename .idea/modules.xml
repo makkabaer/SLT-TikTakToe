@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/TicTac.iml" filepath="$PROJECT_DIR$/TicTac.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TicTac.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TicTac.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TicTac.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TicTac.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.TicTac.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.TicTac.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.TicTac.test.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.TicTac.test.iml" />
     </modules>
   </component>
 </project>
