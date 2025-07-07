@@ -31,6 +31,10 @@ public class Board {
         }
     }
 
+    public void makeMove(Player player) {
+        // Eingabe vom Spieler entgegennehmen und auf das Board setzen
+    }
+
     public void print() {
         System.out.println("▁▁▁▁▁▁▁");
         System.out.println("|"+cells[0][0]+"|"+cells[0][1]+"|"+cells[0][2]+"|");
