@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="org.example.TicTac.main" target="1.8" />
-      <module name="org.example.TicTac.test" target="1.8" />
-      <module name="TicTac" target="1.8" />
+      <module name="org.example.TicTac.main" target="22" />
+      <module name="org.example.TicTac.test" target="22" />
+      <module name="TicTac" target="22" />
       <module name="TicTac.main" target="22" />
       <module name="TicTac.test" target="22" />
     </bytecodeTargetLevel>
