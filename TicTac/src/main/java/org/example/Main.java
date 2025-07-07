@@ -9,6 +9,6 @@ public class Main {
         board.place(1,0,'O');
         board.print();
 
-        System.out.println("hello World");
+
     }
 }
