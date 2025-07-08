@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.TicTacToeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-07-08T19:26:24" hostname="DESKTOP-DOIK9T9" time="0.011">
+  <properties/>
+  <testcase name="testPlayAgain_yesStartsNewGame()" classname="org.example.TicTacToeTest" time="0.002"/>
+  <testcase name="TestSwitchCurrentPlayer_from1to2()" classname="org.example.TicTacToeTest" time="0.001"/>
+  <testcase name="TestSwitchCurrentPlayer_wrongSwitch()" classname="org.example.TicTacToeTest" time="0.0"/>
+  <testcase name="testHasWinner_no()" classname="org.example.TicTacToeTest" time="0.002"/>
+  <testcase name="testHasWinner_yes()" classname="org.example.TicTacToeTest" time="0.001"/>
+  <testcase name="TestSwitchCurrentPlayer_noSwitch()" classname="org.example.TicTacToeTest" time="0.0"/>
+  <testcase name="testPlayAgain_noEndsGame()" classname="org.example.TicTacToeTest" time="0.001"/>
+  <system-out><![CDATA[_______
+|X| | |
+| | | |
+| | | |
+-------
+_______
+|X| | |
+| | | |
+| | | |
+-------
+_______
+|X| | |
+| |X| |
+| | | |
+-------
+_______
+|X| |X|
+| |X| |
+| | | |
+-------
+_______
+|X| | |
+| | | |
+| | | |
+-------
+_______
+|X|X| |
+| | | |
+| | | |
+-------
+_______
+|X|X|X|
+| | | |
+| | | |
+-------
+_______
+|X| | |
+| | | |
+| | | |
+-------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
