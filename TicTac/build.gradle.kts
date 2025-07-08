@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.example"
-version = "0.1"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -23,7 +23,6 @@ tasks.jar {
     manifest {
         attributes["Main-Class"] = "org.example.Main"
     }
-    // Ez opcionális, de jól jöhet:
     from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

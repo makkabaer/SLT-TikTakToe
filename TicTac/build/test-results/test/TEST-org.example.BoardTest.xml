@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.BoardTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-07-08T19:26:24" hostname="DESKTOP-DOIK9T9" time="0.051">
+  <properties/>
+  <testcase name="testIsFull_shouldReturnFalse_whenAtLeastOneCellIsEmpty()" classname="org.example.BoardTest" time="0.03"/>
+  <testcase name="testIsCellEmpty_shouldReturnTrue_whenCellIsEmpty()" classname="org.example.BoardTest" time="0.001"/>
+  <testcase name="testIsCellEmpty_shouldReturnFalse_whenCellIsOccupied()" classname="org.example.BoardTest" time="0.001"/>
+  <testcase name="testClear_shouldNotLeaveNonEmptyCells_afterClearCalled()" classname="org.example.BoardTest" time="0.002"/>
+  <testcase name="testGetCells_shouldNotReturnNull()" classname="org.example.BoardTest" time="0.001"/>
+  <testcase name="testClear_shouldEmptyAllCells_afterBoardIsUsed()" classname="org.example.BoardTest" time="0.002"/>
+  <testcase name="testPlace_shouldNotOverwriteMarker_whenCellIsOccupied()" classname="org.example.BoardTest" time="0.002"/>
+  <testcase name="testIsFull_shouldReturnTrue_whenAllCellsAreFilled()" classname="org.example.BoardTest" time="0.003"/>
+  <testcase name="testGetCells_shouldReturnCorrectArrayReference()" classname="org.example.BoardTest" time="0.001"/>
+  <testcase name="testPlace_shouldPlaceMarker_whenCellIsEmpty()" classname="org.example.BoardTest" time="0.001"/>
+  <system-out><![CDATA[_______
+|O| | |
+| | | |
+| | | |
+-------
+_______
+|O|O| |
+| | | |
+| | | |
+-------
+_______
+|O|O|O|
+| | | |
+| | | |
+-------
+_______
+|O|O|O|
+|O| | |
+| | | |
+-------
+_______
+|O|O|O|
+|O| |O|
+| | | |
+-------
+_______
+|O|O|O|
+|O| |O|
+|O| | |
+-------
+_______
+|O|O|O|
+|O| |O|
+|O|O| |
+-------
+_______
+|O|O|O|
+|O| |O|
+|O|O|O|
+-------
+_______
+| | | |
+| |X| |
+| | | |
+-------
+_______
+| | | |
+| |X| |
+| | | |
+-------
+_______
+|X| | |
+| | | |
+| | | |
+-------
+_______
+|X| | |
+| | | |
+| | |O|
+-------
+_______
+| | | |
+| | | |
+| | |X|
+-------
+_______
+|X| | |
+| | | |
+| | | |
+-------
+_______
+|X|X| |
+| | | |
+| | | |
+-------
+_______
+|X|X|X|
+| | | |
+| | | |
+-------
+_______
+|X|X|X|
+|X| | |
+| | | |
+-------
+_______
+|X|X|X|
+|X|X| |
+| | | |
+-------
+_______
+|X|X|X|
+|X|X|X|
+| | | |
+-------
+_______
+|X|X|X|
+|X|X|X|
+|X| | |
+-------
+_______
+|X|X|X|
+|X|X|X|
+|X|X| |
+-------
+_______
+|X|X|X|
+|X|X|X|
+|X|X|X|
+-------
+_______
+|X| | |
+| | | |
+| | | |
+-------
+_______
+| |O| |
+| | | |
+| | | |
+-------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

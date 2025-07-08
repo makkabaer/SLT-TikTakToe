@@ -8,8 +8,9 @@ public class Board {
     }
 
     public boolean isCellEmpty (int x, int y) {
-        //user story nr.1
-        return true;
+        // if xy in cells has char -> false, return true if xy has char cell index is empty
+        if (cells[x][y] == ' ') return  true;
+        else return false;
     }
 
     public char[][] getCells() {
@@ -20,6 +21,7 @@ public class Board {
     public void place (int x, int y, char marker) {
         if (isCellEmpty(x,y)) {
             cells[x][y]=marker;
+            print();
         }
     }
 
@@ -27,7 +29,7 @@ public class Board {
         public boolean isFull() {
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
-                    if (cells[i][j] == ' ') return false;
+                    if (isCellEmpty(i,j)) return false;
                 }
             }
             return true;
@@ -63,10 +65,10 @@ public class Board {
 
 
     public void print() {
-        System.out.println("▁▁▁▁▁▁▁");
+        System.out.println("_______");
         System.out.println("|"+cells[0][0]+"|"+cells[0][1]+"|"+cells[0][2]+"|");
         System.out.println("|"+cells[1][0]+"|"+cells[1][1]+"|"+cells[1][2]+"|");
         System.out.println("|"+cells[2][0]+"|"+cells[2][1]+"|"+cells[2][2]+"|");
-        System.out.println("▔▔▔▔▔▔▔");
+        System.out.println("-------");
     }
 }

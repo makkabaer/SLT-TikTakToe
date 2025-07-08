@@ -7,14 +7,14 @@ public class TicTacToe {
     protected Board board;
 
     public TicTacToe() {
-        //TicTacToe
+        board = new Board();
+        this.player1 = new Player('X');
+        this.player2 = new Player('O');
+        this.currentPlayer = player1;
     }
 
     public void start() {
-        board = new Board();
-        player1 = new Player('X');
-        player2 = new Player('O');
-        currentPlayer = player1;
+
 
         boolean playAgain;
 
@@ -52,6 +52,9 @@ public class TicTacToe {
         currentPlayer = (currentPlayer == player1) ? player2 : player1;
     }
 
+    public Player getCurrentPlayer() { //nur für die Testing
+        return currentPlayer;
+    }
 
     boolean hasWinner() {
 
